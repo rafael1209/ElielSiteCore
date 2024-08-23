@@ -15,7 +15,7 @@ namespace ElielSiteCore.Controllers
                 [HttpPost]
                 public IActionResult Login(LoginRequest loginRequest)
                 {
-                        string username = "bob2012", password = "12345679012";
+                        string username = "BobAdmin", password = "Y0uG0tMe#Unlock!";
 
                         if (string.IsNullOrEmpty(loginRequest.login) || string.IsNullOrEmpty(loginRequest.password))
                                 return BadRequest("Empty Field");
@@ -24,7 +24,7 @@ namespace ElielSiteCore.Controllers
                         {
                                 if (password == loginRequest.password)
                                 {
-                                        return Ok("Login succses!");
+                                        return Ok("https://cdn.discordapp.com/avatars/773259384095768657/1e34825a81c63857aacf7a395e87e579.png");
                                 }
 
                                 return BadRequest("Paswword error");
